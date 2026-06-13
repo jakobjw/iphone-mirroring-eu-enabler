@@ -28,6 +28,8 @@ if "OS_ELIGIBILITY_DOMAIN_IRON" in plist_data:
 with open(file_path, 'wb') as file:
     plistlib.dump(plist_data, file)
 
-print("Plist file updated successfully!")
+print("✅ iphone-mirroring-eu-enabler: plist file updated successfully")
 
-subprocess.run(["open", app_path])
+
+# commented out, to not start the app actually:
+#subprocess.run(["open", app_path])
